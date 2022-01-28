@@ -1,0 +1,52 @@
+<?xml version="1.1"?>
+<!DOCTYPE Tabula_Rasa>
+<Algorithme>
+  <nom>convertirCoordonnee</nom>
+  <date_creation>5/1/2022 10:49</date_creation>
+  <Elements>
+    <Action>
+      <Position>804;158</Position>
+      <StyleLien>2</StyleLien>
+      <PreAssertion>coordonnee</PreAssertion>
+      <PostAssertion>ligne 
+colonne</PostAssertion>
+      <Titre>convertirCoordonnee()</Titre>
+      <DetailsVisible>1</DetailsVisible>
+      <DetailsVideVisible>1</DetailsVideVisible>
+      <Enfants>
+        <Action>
+          <Position>819;233</Position>
+          <StyleLien>2</StyleLien>
+          <PreAssertion>coordonnee</PreAssertion>
+          <PostAssertion>ligne
+colonne</PostAssertion>
+          <Titre>Décrementer de 1</Titre>
+          <DetailsVisible>1</DetailsVisible>
+          <DetailsVideVisible>1</DetailsVideVisible>
+          <Enfants>
+            <Action>
+              <Position>580;346</Position>
+              <StyleLien>1</StyleLien>
+              <PreAssertion>coordonnee</PreAssertion>
+              <PostAssertion>ligne</PostAssertion>
+              <Titre>ligne ← coordonnee[0] -1</Titre>
+              <DetailsVisible>1</DetailsVisible>
+              <DetailsVideVisible>1</DetailsVideVisible>
+              <Enfants/>
+            </Action>
+            <Action>
+              <Position>975;346</Position>
+              <StyleLien>1</StyleLien>
+              <PreAssertion>coordonnee</PreAssertion>
+              <PostAssertion>colonne</PostAssertion>
+              <Titre>colonne ← coordonnee[1] - 1</Titre>
+              <DetailsVisible>1</DetailsVisible>
+              <DetailsVideVisible>1</DetailsVideVisible>
+              <Enfants/>
+            </Action>
+          </Enfants>
+        </Action>
+      </Enfants>
+    </Action>
+  </Elements>
+</Algorithme>

@@ -1,0 +1,645 @@
+<?xml version="1.1"?>
+<!DOCTYPE Tabula_Rasa>
+<Algorithme>
+  <nom>AlgorithmeJoueur</nom>
+  <date_creation>5/1/2022 22:42</date_creation>
+  <Elements>
+    <Action>
+      <Position>1832;106</Position>
+      <StyleLien>2</StyleLien>
+      <PreAssertion>prenom1, symbole1
+prenom2, symbole2
+grille[], numeroTour</PreAssertion>
+      <PostAssertion>victoire, abandon
+numeroTour, grille[]</PostAssertion>
+      <Titre>Jouer</Titre>
+      <DetailsVisible>1</DetailsVisible>
+      <DetailsVideVisible>1</DetailsVideVisible>
+      <Enfants>
+        <Iteration>
+          <Position>1998.5;167.5</Position>
+          <StyleLien>1</StyleLien>
+          <Titre>?</Titre>
+          <IterationFixe>1</IterationFixe>
+          <Enfants>
+            <Action>
+              <Position>805;253</Position>
+              <StyleLien>2</StyleLien>
+              <PreAssertion>grille[], numeroTour
+symbole1, prenom1
+victoire, abandon</PreAssertion>
+              <PostAssertion>grille[], numeroTour
+victoire, abandon</PostAssertion>
+              <Titre>Tour du joueur 1</Titre>
+              <DetailsVisible>1</DetailsVisible>
+              <DetailsVideVisible>1</DetailsVideVisible>
+              <Enfants>
+                <Action>
+                  <Position>108;356</Position>
+                  <StyleLien>2</StyleLien>
+                  <PreAssertion>numeroTour</PreAssertion>
+                  <PostAssertion>numeroTour</PostAssertion>
+                  <Titre>Numero du Tour</Titre>
+                  <DetailsVisible>1</DetailsVisible>
+                  <DetailsVideVisible>1</DetailsVideVisible>
+                  <Enfants>
+                    <Action>
+                      <Position>187;450</Position>
+                      <StyleLien>1</StyleLien>
+                      <PreAssertion>?</PreAssertion>
+                      <PostAssertion>?</PostAssertion>
+                      <Titre>Afficher numero
+du Tour</Titre>
+                      <DetailsVisible>1</DetailsVisible>
+                      <DetailsVideVisible>0</DetailsVideVisible>
+                      <Enfants/>
+                    </Action>
+                    <Action>
+                      <Position>290;451</Position>
+                      <StyleLien>1</StyleLien>
+                      <PreAssertion>?</PreAssertion>
+                      <PostAssertion>?</PostAssertion>
+                      <Titre>numeroTour =+1</Titre>
+                      <DetailsVisible>1</DetailsVisible>
+                      <DetailsVideVisible>0</DetailsVideVisible>
+                      <Enfants/>
+                    </Action>
+                  </Enfants>
+                </Action>
+                <Action>
+                  <Position>487;353</Position>
+                  <StyleLien>2</StyleLien>
+                  <PreAssertion>grille[]</PreAssertion>
+                  <PostAssertion>grille[], abandon
+ligne, colonne</PostAssertion>
+                  <Titre>Affichage et saisi joueur</Titre>
+                  <DetailsVisible>1</DetailsVisible>
+                  <DetailsVideVisible>1</DetailsVideVisible>
+                  <Enfants>
+                    <Action>
+                      <Position>437;461</Position>
+                      <StyleLien>1</StyleLien>
+                      <PreAssertion>grille[]</PreAssertion>
+                      <PostAssertion>?</PostAssertion>
+                      <Titre>afficherGrille(grille)</Titre>
+                      <DetailsVisible>1</DetailsVisible>
+                      <DetailsVideVisible>0</DetailsVideVisible>
+                      <Enfants/>
+                    </Action>
+                    <Action>
+                      <Position>665;457</Position>
+                      <StyleLien>2</StyleLien>
+                      <PreAssertion>grille[]</PreAssertion>
+                      <PostAssertion>abandon,
+ligne, colonne</PostAssertion>
+                      <Titre>saisi verif de la 
+coordonne du joueur</Titre>
+                      <DetailsVisible>1</DetailsVisible>
+                      <DetailsVideVisible>1</DetailsVideVisible>
+                      <Enfants>
+                        <Iteration>
+                          <Position>793.5;527.5</Position>
+                          <StyleLien>1</StyleLien>
+                          <Titre>?</Titre>
+                          <IterationFixe>1</IterationFixe>
+                          <Enfants>
+                            <Action>
+                              <Position>153;615</Position>
+                              <StyleLien>1</StyleLien>
+                              <PreAssertion>?</PreAssertion>
+                              <PostAssertion>coordonnee</PostAssertion>
+                              <Titre>saisi de coordonnee</Titre>
+                              <DetailsVisible>1</DetailsVisible>
+                              <DetailsVideVisible>0</DetailsVideVisible>
+                              <Enfants/>
+                            </Action>
+                            <Action>
+                              <Position>733;618</Position>
+                              <StyleLien>1</StyleLien>
+                              <PreAssertion>coordoonnee</PreAssertion>
+                              <PostAssertion>ligne
+colonne</PostAssertion>
+                              <Titre>fonction 
+convertionCoord(coordonnee)</Titre>
+                              <DetailsVisible>1</DetailsVisible>
+                              <DetailsVideVisible>1</DetailsVideVisible>
+                              <Enfants/>
+                            </Action>
+                            <Action>
+                              <Position>415;617</Position>
+                              <StyleLien>2</StyleLien>
+                              <PreAssertion>abandon</PreAssertion>
+                              <PostAssertion>abandon</PostAssertion>
+                              <Titre>Verifier l'abandon</Titre>
+                              <DetailsVisible>1</DetailsVisible>
+                              <DetailsVideVisible>1</DetailsVideVisible>
+                              <Enfants>
+                                <Condition>
+                                  <Position>500;693</Position>
+                                  <StyleLien>1</StyleLien>
+                                  <estUnique>0</estUnique>
+                                  <operationsLogiques>
+                                    <operation>
+                                      <Titre>verification
+ de l'abandon</Titre>
+                                      <Enfants>
+                                        <Action>
+                                          <Position>384;773</Position>
+                                          <StyleLien>1</StyleLien>
+                                          <PreAssertion>?</PreAssertion>
+                                          <PostAssertion>abandon</PostAssertion>
+                                          <Titre>abandon = vrai</Titre>
+                                          <DetailsVisible>1</DetailsVisible>
+                                          <DetailsVideVisible>0</DetailsVideVisible>
+                                          <Enfants/>
+                                        </Action>
+                                        <Sortie>
+                                          <Position>612;779</Position>
+                                        </Sortie>
+                                      </Enfants>
+                                    </operation>
+                                  </operationsLogiques>
+                                </Condition>
+                              </Enfants>
+                            </Action>
+                            <Action>
+                              <Position>1159;618</Position>
+                              <StyleLien>2</StyleLien>
+                              <PreAssertion>grille[], ligne
+colonne</PreAssertion>
+                              <PostAssertion>?</PostAssertion>
+                              <Titre>Vérifier coordonnée
+Vérifier la case vide</Titre>
+                              <DetailsVisible>1</DetailsVisible>
+                              <DetailsVideVisible>0</DetailsVideVisible>
+                              <Enfants>
+                                <Condition>
+                                  <Position>1203;695</Position>
+                                  <StyleLien>0</StyleLien>
+                                  <estUnique>0</estUnique>
+                                  <operationsLogiques>
+                                    <operation>
+                                      <Titre>verifCoord(ligne,colonne) 
+&amp;&amp; verifiCaseVide
+(grille,ligne,colonne)</Titre>
+                                      <Enfants>
+                                        <Sortie>
+                                          <Position>1281;776</Position>
+                                        </Sortie>
+                                      </Enfants>
+                                    </operation>
+                                    <operation>
+                                      <Titre>Sinon</Titre>
+                                      <Enfants>
+                                        <Action>
+                                          <Position>1373;769</Position>
+                                          <StyleLien>1</StyleLien>
+                                          <PreAssertion>?</PreAssertion>
+                                          <PostAssertion>?</PostAssertion>
+                                          <Titre>Afficher erreur 
+de saisi</Titre>
+                                          <DetailsVisible>1</DetailsVisible>
+                                          <DetailsVideVisible>0</DetailsVideVisible>
+                                          <Enfants/>
+                                        </Action>
+                                      </Enfants>
+                                    </operation>
+                                  </operationsLogiques>
+                                </Condition>
+                              </Enfants>
+                            </Action>
+                          </Enfants>
+                        </Iteration>
+                      </Enfants>
+                    </Action>
+                  </Enfants>
+                </Action>
+                <Action>
+                  <Position>1207;348</Position>
+                  <StyleLien>1</StyleLien>
+                  <PreAssertion>grille[]
+ligne, colonne
+symbole1</PreAssertion>
+                  <PostAssertion>grille[]</PostAssertion>
+                  <Titre>insererSymbole
+(grille,symbole1,
+ligne,colonne)</Titre>
+                  <DetailsVisible>1</DetailsVisible>
+                  <DetailsVideVisible>1</DetailsVideVisible>
+                  <Enfants/>
+                </Action>
+                <Action>
+                  <Position>1531;347</Position>
+                  <StyleLien>2</StyleLien>
+                  <PreAssertion>grille[]
+symbole1</PreAssertion>
+                  <PostAssertion>victoire</PostAssertion>
+                  <Titre>Verifier les 
+cas de victoire</Titre>
+                  <DetailsVisible>1</DetailsVisible>
+                  <DetailsVideVisible>1</DetailsVideVisible>
+                  <Enfants>
+                    <Condition>
+                      <Position>1595;453</Position>
+                      <StyleLien>1</StyleLien>
+                      <estUnique>1</estUnique>
+                      <operationsLogiques>
+                        <operation>
+                          <Titre>verifierVictoireLigne(*)
+verifierVictoireColone(*)
+verifierVictoireDiagonale(*)</Titre>
+                          <Enfants>
+                            <Sortie>
+                              <Position>1757;554</Position>
+                            </Sortie>
+                            <Action>
+                              <Position>1557;538</Position>
+                              <StyleLien>1</StyleLien>
+                              <PreAssertion>?</PreAssertion>
+                              <PostAssertion>victoire</PostAssertion>
+                              <Titre>vitoire = vrai</Titre>
+                              <DetailsVisible>1</DetailsVisible>
+                              <DetailsVideVisible>0</DetailsVideVisible>
+                              <Enfants/>
+                            </Action>
+                          </Enfants>
+                        </operation>
+                        <operation>
+                          <Titre>Sinon</Titre>
+                          <Enfants/>
+                        </operation>
+                      </operationsLogiques>
+                    </Condition>
+                  </Enfants>
+                </Action>
+                <Action>
+                  <Position>890;354</Position>
+                  <StyleLien>2</StyleLien>
+                  <PreAssertion>abandon</PreAssertion>
+                  <PostAssertion>abandon</PostAssertion>
+                  <Titre>Verifier l'abandon</Titre>
+                  <DetailsVisible>1</DetailsVisible>
+                  <DetailsVideVisible>1</DetailsVideVisible>
+                  <Enfants>
+                    <Condition>
+                      <Position>1013;437</Position>
+                      <StyleLien>1</StyleLien>
+                      <estUnique>1</estUnique>
+                      <operationsLogiques>
+                        <operation>
+                          <Titre>abandon = vrai</Titre>
+                          <Enfants>
+                            <Sortie>
+                              <Position>1046;501</Position>
+                            </Sortie>
+                          </Enfants>
+                        </operation>
+                        <operation>
+                          <Titre>Sinon</Titre>
+                          <Enfants/>
+                        </operation>
+                      </operationsLogiques>
+                    </Condition>
+                  </Enfants>
+                </Action>
+              </Enfants>
+            </Action>
+            <Action>
+              <Position>2574;260</Position>
+              <StyleLien>2</StyleLien>
+              <PreAssertion>grille[], numeroTour
+symbole2, prenom2
+victoire, abandon</PreAssertion>
+              <PostAssertion>grille[], numeroTour
+victoire, abandon</PostAssertion>
+              <Titre>Tour du joueur 2</Titre>
+              <DetailsVisible>1</DetailsVisible>
+              <DetailsVideVisible>1</DetailsVideVisible>
+              <Enfants>
+                <Action>
+                  <Position>2453;351</Position>
+                  <StyleLien>2</StyleLien>
+                  <PreAssertion>grille[]</PreAssertion>
+                  <PostAssertion>grille[], abandon
+ligne, colonne</PostAssertion>
+                  <Titre>Affichage et saisi joueur</Titre>
+                  <DetailsVisible>1</DetailsVisible>
+                  <DetailsVideVisible>1</DetailsVideVisible>
+                  <Enfants>
+                    <Action>
+                      <Position>2345;442</Position>
+                      <StyleLien>1</StyleLien>
+                      <PreAssertion>grille[]</PreAssertion>
+                      <PostAssertion>?</PostAssertion>
+                      <Titre>Afficher grille</Titre>
+                      <DetailsVisible>1</DetailsVisible>
+                      <DetailsVideVisible>0</DetailsVideVisible>
+                      <Enfants/>
+                    </Action>
+                    <Action>
+                      <Position>2543;442</Position>
+                      <StyleLien>2</StyleLien>
+                      <PreAssertion>grille[]</PreAssertion>
+                      <PostAssertion>abandon,
+ligne, colonne</PostAssertion>
+                      <Titre>saisi verif de la 
+coordonne du joueur</Titre>
+                      <DetailsVisible>1</DetailsVisible>
+                      <DetailsVideVisible>1</DetailsVideVisible>
+                      <Enfants>
+                        <Iteration>
+                          <Position>2663.5;523.5</Position>
+                          <StyleLien>1</StyleLien>
+                          <Titre>?</Titre>
+                          <IterationFixe>1</IterationFixe>
+                          <Enfants>
+                            <Action>
+                              <Position>2561;611</Position>
+                              <StyleLien>1</StyleLien>
+                              <PreAssertion>coordoonnee</PreAssertion>
+                              <PostAssertion>ligne
+colonne</PostAssertion>
+                              <Titre>fonction 
+convertionCoord(coordonnee)</Titre>
+                              <DetailsVisible>1</DetailsVisible>
+                              <DetailsVideVisible>1</DetailsVideVisible>
+                              <Enfants/>
+                            </Action>
+                            <Action>
+                              <Position>1982;611</Position>
+                              <StyleLien>1</StyleLien>
+                              <PreAssertion>?</PreAssertion>
+                              <PostAssertion>coordonnee</PostAssertion>
+                              <Titre>saisi de coordonnee</Titre>
+                              <DetailsVisible>1</DetailsVisible>
+                              <DetailsVideVisible>0</DetailsVideVisible>
+                              <Enfants/>
+                            </Action>
+                            <Action>
+                              <Position>2241;612</Position>
+                              <StyleLien>2</StyleLien>
+                              <PreAssertion>abandon</PreAssertion>
+                              <PostAssertion>abandon</PostAssertion>
+                              <Titre>Verifier l'abandon</Titre>
+                              <DetailsVisible>1</DetailsVisible>
+                              <DetailsVideVisible>1</DetailsVideVisible>
+                              <Enfants>
+                                <Condition>
+                                  <Position>2325;673</Position>
+                                  <StyleLien>1</StyleLien>
+                                  <estUnique>0</estUnique>
+                                  <operationsLogiques>
+                                    <operation>
+                                      <Titre>verification
+ de l'abandon</Titre>
+                                      <Enfants>
+                                        <Action>
+                                          <Position>2209;753</Position>
+                                          <StyleLien>1</StyleLien>
+                                          <PreAssertion>?</PreAssertion>
+                                          <PostAssertion>abandon</PostAssertion>
+                                          <Titre>abandon = vrai</Titre>
+                                          <DetailsVisible>1</DetailsVisible>
+                                          <DetailsVideVisible>0</DetailsVideVisible>
+                                          <Enfants/>
+                                        </Action>
+                                        <Sortie>
+                                          <Position>2437;759</Position>
+                                        </Sortie>
+                                      </Enfants>
+                                    </operation>
+                                  </operationsLogiques>
+                                </Condition>
+                              </Enfants>
+                            </Action>
+                            <Action>
+                              <Position>2975;609</Position>
+                              <StyleLien>2</StyleLien>
+                              <PreAssertion>grille[], ligne
+colonne</PreAssertion>
+                              <PostAssertion>?</PostAssertion>
+                              <Titre>Vérifier coordonnée
+Vérifier la case vide</Titre>
+                              <DetailsVisible>1</DetailsVisible>
+                              <DetailsVideVisible>0</DetailsVideVisible>
+                              <Enfants>
+                                <Condition>
+                                  <Position>3029;688</Position>
+                                  <StyleLien>0</StyleLien>
+                                  <estUnique>0</estUnique>
+                                  <operationsLogiques>
+                                    <operation>
+                                      <Titre>verifCoord(ligne,colonne) 
+&amp;&amp; verifiCaseVide
+(grille,ligne,colonne)</Titre>
+                                      <Enfants>
+                                        <Sortie>
+                                          <Position>3108;769</Position>
+                                        </Sortie>
+                                      </Enfants>
+                                    </operation>
+                                    <operation>
+                                      <Titre>Sinon</Titre>
+                                      <Enfants>
+                                        <Action>
+                                          <Position>3181;755</Position>
+                                          <StyleLien>1</StyleLien>
+                                          <PreAssertion>?</PreAssertion>
+                                          <PostAssertion>?</PostAssertion>
+                                          <Titre>Afficher erreur 
+de saisi</Titre>
+                                          <DetailsVisible>1</DetailsVisible>
+                                          <DetailsVideVisible>0</DetailsVideVisible>
+                                          <Enfants/>
+                                        </Action>
+                                      </Enfants>
+                                    </operation>
+                                  </operationsLogiques>
+                                </Condition>
+                              </Enfants>
+                            </Action>
+                          </Enfants>
+                        </Iteration>
+                      </Enfants>
+                    </Action>
+                  </Enfants>
+                </Action>
+                <Action>
+                  <Position>3144;361</Position>
+                  <StyleLien>1</StyleLien>
+                  <PreAssertion>grille[]
+ligne, colonne
+symbole2</PreAssertion>
+                  <PostAssertion>grille[]</PostAssertion>
+                  <Titre>insererSymbole
+(grille,symbole2,
+ligne,colonne)</Titre>
+                  <DetailsVisible>1</DetailsVisible>
+                  <DetailsVideVisible>1</DetailsVideVisible>
+                  <Enfants/>
+                </Action>
+                <Action>
+                  <Position>2085;352</Position>
+                  <StyleLien>2</StyleLien>
+                  <PreAssertion>numeroTour</PreAssertion>
+                  <PostAssertion>numeroTour</PostAssertion>
+                  <Titre>Numero du Tour</Titre>
+                  <DetailsVisible>1</DetailsVisible>
+                  <DetailsVideVisible>1</DetailsVideVisible>
+                  <Enfants>
+                    <Action>
+                      <Position>2103;448</Position>
+                      <StyleLien>1</StyleLien>
+                      <PreAssertion>?</PreAssertion>
+                      <PostAssertion>?</PostAssertion>
+                      <Titre>Afficher numero
+du Tour</Titre>
+                      <DetailsVisible>1</DetailsVisible>
+                      <DetailsVideVisible>0</DetailsVideVisible>
+                      <Enfants/>
+                    </Action>
+                    <Action>
+                      <Position>2206;449</Position>
+                      <StyleLien>1</StyleLien>
+                      <PreAssertion>?</PreAssertion>
+                      <PostAssertion>?</PostAssertion>
+                      <Titre>numeroTour =+1</Titre>
+                      <DetailsVisible>1</DetailsVisible>
+                      <DetailsVideVisible>0</DetailsVideVisible>
+                      <Enfants/>
+                    </Action>
+                  </Enfants>
+                </Action>
+                <Action>
+                  <Position>1829;349</Position>
+                  <StyleLien>2</StyleLien>
+                  <PreAssertion>numeroTour</PreAssertion>
+                  <PostAssertion>?</PostAssertion>
+                  <Titre>Vérification de fin
+de partie</Titre>
+                  <DetailsVisible>1</DetailsVisible>
+                  <DetailsVideVisible>0</DetailsVideVisible>
+                  <Enfants>
+                    <Condition>
+                      <Position>1927;422</Position>
+                      <StyleLien>1</StyleLien>
+                      <estUnique>1</estUnique>
+                      <operationsLogiques>
+                        <operation>
+                          <Titre>numeroTour == 10</Titre>
+                          <Enfants>
+                            <Sortie>
+                              <Position>1963;500</Position>
+                            </Sortie>
+                          </Enfants>
+                        </operation>
+                        <operation>
+                          <Titre>Sinon</Titre>
+                          <Enfants/>
+                        </operation>
+                      </operationsLogiques>
+                    </Condition>
+                  </Enfants>
+                </Action>
+                <Action>
+                  <Position>3473;360</Position>
+                  <StyleLien>2</StyleLien>
+                  <PreAssertion>grille[]
+symbole1</PreAssertion>
+                  <PostAssertion>victoire</PostAssertion>
+                  <Titre>Verifier les 
+cas de victoire</Titre>
+                  <DetailsVisible>1</DetailsVisible>
+                  <DetailsVideVisible>1</DetailsVideVisible>
+                  <Enfants>
+                    <Condition>
+                      <Position>3526;450</Position>
+                      <StyleLien>1</StyleLien>
+                      <estUnique>1</estUnique>
+                      <operationsLogiques>
+                        <operation>
+                          <Titre>verifierVictoireLigne(*)
+verifierVictoireColone(*)
+verifierVictoireDiagonale(*)</Titre>
+                          <Enfants>
+                            <Sortie>
+                              <Position>3701;575</Position>
+                            </Sortie>
+                            <Action>
+                              <Position>3498;560</Position>
+                              <StyleLien>1</StyleLien>
+                              <PreAssertion>?</PreAssertion>
+                              <PostAssertion>victoire</PostAssertion>
+                              <Titre>vitoire = vrai</Titre>
+                              <DetailsVisible>1</DetailsVisible>
+                              <DetailsVideVisible>0</DetailsVideVisible>
+                              <Enfants/>
+                            </Action>
+                          </Enfants>
+                        </operation>
+                        <operation>
+                          <Titre>Sinon</Titre>
+                          <Enfants/>
+                        </operation>
+                      </operationsLogiques>
+                    </Condition>
+                  </Enfants>
+                </Action>
+                <Action>
+                  <Position>2826;362</Position>
+                  <StyleLien>2</StyleLien>
+                  <PreAssertion>abandon</PreAssertion>
+                  <PostAssertion>abandon</PostAssertion>
+                  <Titre>Verifier l'abandon</Titre>
+                  <DetailsVisible>1</DetailsVisible>
+                  <DetailsVideVisible>1</DetailsVideVisible>
+                  <Enfants>
+                    <Condition>
+                      <Position>2912;435</Position>
+                      <StyleLien>1</StyleLien>
+                      <estUnique>1</estUnique>
+                      <operationsLogiques>
+                        <operation>
+                          <Titre>abandon = vrai</Titre>
+                          <Enfants>
+                            <Sortie>
+                              <Position>2936;495</Position>
+                            </Sortie>
+                          </Enfants>
+                        </operation>
+                        <operation>
+                          <Titre>Sinon</Titre>
+                          <Enfants/>
+                        </operation>
+                      </operationsLogiques>
+                    </Condition>
+                  </Enfants>
+                </Action>
+              </Enfants>
+            </Action>
+          </Enfants>
+        </Iteration>
+      </Enfants>
+    </Action>
+    <Action>
+      <Position>3385;497</Position>
+      <StyleLien>1</StyleLien>
+      <PreAssertion>?</PreAssertion>
+      <PostAssertion>?</PostAssertion>
+      <Titre>*grille[],symbole2</Titre>
+      <DetailsVisible>1</DetailsVisible>
+      <DetailsVideVisible>0</DetailsVideVisible>
+      <Enfants/>
+    </Action>
+    <Action>
+      <Position>1455;483</Position>
+      <StyleLien>1</StyleLien>
+      <PreAssertion>?</PreAssertion>
+      <PostAssertion>?</PostAssertion>
+      <Titre>*grille[],symbole1</Titre>
+      <DetailsVisible>1</DetailsVisible>
+      <DetailsVideVisible>0</DetailsVideVisible>
+      <Enfants/>
+    </Action>
+  </Elements>
+</Algorithme>

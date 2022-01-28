@@ -1,0 +1,49 @@
+<?xml version="1.1"?>
+<!DOCTYPE Tabula_Rasa>
+<Algorithme>
+  <nom>afficherFinPartie</nom>
+  <date_creation>5/1/2022 11:01</date_creation>
+  <Elements>
+    <Action>
+      <Position>429;52</Position>
+      <StyleLien>2</StyleLien>
+      <PreAssertion>grille[], numeroTour</PreAssertion>
+      <PostAssertion>?</PostAssertion>
+      <Titre>afficherFinPartie()</Titre>
+      <DetailsVisible>1</DetailsVisible>
+      <DetailsVideVisible>0</DetailsVideVisible>
+      <Enfants>
+        <Action>
+          <Position>338;154</Position>
+          <StyleLien>1</StyleLien>
+          <PreAssertion>?</PreAssertion>
+          <PostAssertion>?</PostAssertion>
+          <Titre>effacer</Titre>
+          <DetailsVisible>1</DetailsVisible>
+          <DetailsVideVisible>0</DetailsVideVisible>
+          <Enfants/>
+        </Action>
+        <Action>
+          <Position>424;154</Position>
+          <StyleLien>1</StyleLien>
+          <PreAssertion>numeroTour</PreAssertion>
+          <PostAssertion>?</PostAssertion>
+          <Titre>afficher numeroTour -1</Titre>
+          <DetailsVisible>1</DetailsVisible>
+          <DetailsVideVisible>0</DetailsVideVisible>
+          <Enfants/>
+        </Action>
+        <Action>
+          <Position>696;154</Position>
+          <StyleLien>1</StyleLien>
+          <PreAssertion>grille[]</PreAssertion>
+          <PostAssertion>?</PostAssertion>
+          <Titre>afficherGrille()</Titre>
+          <DetailsVisible>1</DetailsVisible>
+          <DetailsVideVisible>0</DetailsVideVisible>
+          <Enfants/>
+        </Action>
+      </Enfants>
+    </Action>
+  </Elements>
+</Algorithme>

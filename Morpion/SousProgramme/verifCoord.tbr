@@ -1,0 +1,71 @@
+<?xml version="1.1"?>
+<!DOCTYPE Tabula_Rasa>
+<Algorithme>
+  <nom>verifCoord</nom>
+  <date_creation>5/1/2022 11:01</date_creation>
+  <Elements>
+    <Action>
+      <Position>487;38</Position>
+      <StyleLien>2</StyleLien>
+      <PreAssertion>coordonnee,
+ligne,
+colonne</PreAssertion>
+      <PostAssertion>bool</PostAssertion>
+      <Titre>verifCoord</Titre>
+      <DetailsVisible>1</DetailsVisible>
+      <DetailsVideVisible>1</DetailsVideVisible>
+      <Enfants>
+        <Condition>
+          <Position>549;128</Position>
+          <StyleLien>0</StyleLien>
+          <estUnique>0</estUnique>
+          <operationsLogiques>
+            <operation>
+              <Titre>coordonnee different de 2
+ligne superieur à 2
+ligne inferieur à 0*</Titre>
+              <Enfants>
+                <Action>
+                  <Position>592;212</Position>
+                  <StyleLien>1</StyleLien>
+                  <PreAssertion>?</PreAssertion>
+                  <PostAssertion>?</PostAssertion>
+                  <Titre>retourne faux</Titre>
+                  <DetailsVisible>1</DetailsVisible>
+                  <DetailsVideVisible>0</DetailsVideVisible>
+                  <Enfants/>
+                </Action>
+              </Enfants>
+            </operation>
+            <operation>
+              <Titre>Sinon</Titre>
+              <Enfants>
+                <Action>
+                  <Position>700;210</Position>
+                  <StyleLien>1</StyleLien>
+                  <PreAssertion>?</PreAssertion>
+                  <PostAssertion>?</PostAssertion>
+                  <Titre>retourner vrai</Titre>
+                  <DetailsVisible>1</DetailsVisible>
+                  <DetailsVideVisible>0</DetailsVideVisible>
+                  <Enfants/>
+                </Action>
+              </Enfants>
+            </operation>
+          </operationsLogiques>
+        </Condition>
+      </Enfants>
+    </Action>
+    <Action>
+      <Position>413;185</Position>
+      <StyleLien>1</StyleLien>
+      <PreAssertion>?</PreAssertion>
+      <PostAssertion>?</PostAssertion>
+      <Titre>*colonne superieur à 2
+colonne inferieur à 0</Titre>
+      <DetailsVisible>1</DetailsVisible>
+      <DetailsVideVisible>0</DetailsVideVisible>
+      <Enfants/>
+    </Action>
+  </Elements>
+</Algorithme>

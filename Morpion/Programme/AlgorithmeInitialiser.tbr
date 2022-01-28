@@ -1,0 +1,290 @@
+<?xml version="1.1"?>
+<!DOCTYPE Tabula_Rasa>
+<Algorithme>
+  <nom>Algorithme</nom>
+  <date_creation>5/1/2022 10:20</date_creation>
+  <Elements>
+    <Action>
+      <Position>614;-2</Position>
+      <StyleLien>2</StyleLien>
+      <PreAssertion>?</PreAssertion>
+      <PostAssertion>?</PostAssertion>
+      <Titre>Jeu du Morpion</Titre>
+      <DetailsVisible>1</DetailsVisible>
+      <DetailsVideVisible>1</DetailsVideVisible>
+      <Enfants>
+        <Action>
+          <Position>646;86</Position>
+          <StyleLien>1</StyleLien>
+          <PreAssertion>?</PreAssertion>
+          <PostAssertion>?</PostAssertion>
+          <Titre>Jouer</Titre>
+          <DetailsVisible>1</DetailsVisible>
+          <DetailsVideVisible>1</DetailsVideVisible>
+          <Enfants/>
+        </Action>
+        <Action>
+          <Position>325;93</Position>
+          <StyleLien>2</StyleLien>
+          <PreAssertion>?</PreAssertion>
+          <PostAssertion>prenom1, symbole1
+prenom2, symbole2
+grille, numeroTour</PostAssertion>
+          <Titre>Initialiser la partie</Titre>
+          <DetailsVisible>1</DetailsVisible>
+          <DetailsVideVisible>0</DetailsVideVisible>
+          <Enfants>
+            <Action>
+              <Position>259;198</Position>
+              <StyleLien>1</StyleLien>
+              <PreAssertion>?</PreAssertion>
+              <PostAssertion>?</PostAssertion>
+              <Titre>Afficher règles du jeu</Titre>
+              <DetailsVisible>1</DetailsVisible>
+              <DetailsVideVisible>0</DetailsVideVisible>
+              <Enfants/>
+            </Action>
+            <Action>
+              <Position>1203;195</Position>
+              <StyleLien>1</StyleLien>
+              <PreAssertion>?</PreAssertion>
+              <PostAssertion>grille ←- tab[3][3]</PostAssertion>
+              <Titre>Iniatialisation la grille</Titre>
+              <DetailsVisible>1</DetailsVisible>
+              <DetailsVideVisible>0</DetailsVideVisible>
+              <Enfants/>
+            </Action>
+            <Action>
+              <Position>1504;197</Position>
+              <StyleLien>1</StyleLien>
+              <PreAssertion>?</PreAssertion>
+              <PostAssertion>numeroTour</PostAssertion>
+              <Titre>Initialisation numeroTour</Titre>
+              <DetailsVisible>1</DetailsVisible>
+              <DetailsVideVisible>0</DetailsVideVisible>
+              <Enfants/>
+            </Action>
+            <Action>
+              <Position>695;188</Position>
+              <StyleLien>2</StyleLien>
+              <PreAssertion>?</PreAssertion>
+              <PostAssertion>prenom1, symbole1
+prenom2, symbole2</PostAssertion>
+              <Titre>Personnalisation Joueur</Titre>
+              <DetailsVisible>1</DetailsVisible>
+              <DetailsVideVisible>0</DetailsVideVisible>
+              <Enfants>
+                <Action>
+                  <Position>382;267</Position>
+                  <StyleLien>2</StyleLien>
+                  <PreAssertion>?</PreAssertion>
+                  <PostAssertion>?</PostAssertion>
+                  <Titre>Personnalisation
+ Joueur 1 </Titre>
+                  <DetailsVisible>1</DetailsVisible>
+                  <DetailsVideVisible>0</DetailsVideVisible>
+                  <Enfants>
+                    <Action>
+                      <Position>178;364</Position>
+                      <StyleLien>1</StyleLien>
+                      <PreAssertion>?</PreAssertion>
+                      <PostAssertion>prenom1</PostAssertion>
+                      <Titre>Saisi du prénom</Titre>
+                      <DetailsVisible>1</DetailsVisible>
+                      <DetailsVideVisible>0</DetailsVideVisible>
+                      <Enfants/>
+                    </Action>
+                    <Action>
+                      <Position>405;363</Position>
+                      <StyleLien>1</StyleLien>
+                      <PreAssertion>?</PreAssertion>
+                      <PostAssertion>symbole1</PostAssertion>
+                      <Titre>saisi du symbole1</Titre>
+                      <DetailsVisible>1</DetailsVisible>
+                      <DetailsVideVisible>0</DetailsVideVisible>
+                      <Enfants/>
+                    </Action>
+                    <Action>
+                      <Position>630;363</Position>
+                      <StyleLien>1</StyleLien>
+                      <PreAssertion>?</PreAssertion>
+                      <PostAssertion>?</PostAssertion>
+                      <Titre>vider le buffer
+clavier</Titre>
+                      <DetailsVisible>1</DetailsVisible>
+                      <DetailsVideVisible>0</DetailsVideVisible>
+                      <Enfants/>
+                    </Action>
+                  </Enfants>
+                </Action>
+                <Action>
+                  <Position>1293;264</Position>
+                  <StyleLien>2</StyleLien>
+                  <PreAssertion>?</PreAssertion>
+                  <PostAssertion>?</PostAssertion>
+                  <Titre>Personalisation
+ Joueur 2</Titre>
+                  <DetailsVisible>1</DetailsVisible>
+                  <DetailsVideVisible>0</DetailsVideVisible>
+                  <Enfants>
+                    <Action>
+                      <Position>1086;362</Position>
+                      <StyleLien>2</StyleLien>
+                      <PreAssertion>?</PreAssertion>
+                      <PostAssertion>prenom2</PostAssertion>
+                      <Titre>Saisi du prénom</Titre>
+                      <DetailsVisible>1</DetailsVisible>
+                      <DetailsVideVisible>0</DetailsVideVisible>
+                      <Enfants>
+                        <Iteration>
+                          <Position>1122.5;427.5</Position>
+                          <StyleLien>1</StyleLien>
+                          <Titre>?</Titre>
+                          <IterationFixe>1</IterationFixe>
+                          <Enfants>
+                            <Action>
+                              <Position>929;508</Position>
+                              <StyleLien>1</StyleLien>
+                              <PreAssertion>?</PreAssertion>
+                              <PostAssertion>?</PostAssertion>
+                              <Titre>Demander la
+ saisie du prénom2</Titre>
+                              <DetailsVisible>1</DetailsVisible>
+                              <DetailsVideVisible>0</DetailsVideVisible>
+                              <Enfants/>
+                            </Action>
+                            <Condition>
+                              <Position>1070;517</Position>
+                              <StyleLien>1</StyleLien>
+                              <estUnique>1</estUnique>
+                              <operationsLogiques>
+                                <operation>
+                                  <Titre>prenom2 different
+de prenom1</Titre>
+                                  <Enfants>
+                                    <Sortie>
+                                      <Position>1102;587</Position>
+                                    </Sortie>
+                                  </Enfants>
+                                </operation>
+                                <operation>
+                                  <Titre>Sinon</Titre>
+                                  <Enfants/>
+                                </operation>
+                              </operationsLogiques>
+                            </Condition>
+                            <Action>
+                              <Position>1222;515</Position>
+                              <StyleLien>1</StyleLien>
+                              <PreAssertion>?</PreAssertion>
+                              <PostAssertion>?</PostAssertion>
+                              <Titre>Afficher erreur de saisie</Titre>
+                              <DetailsVisible>1</DetailsVisible>
+                              <DetailsVideVisible>0</DetailsVideVisible>
+                              <Enfants/>
+                            </Action>
+                          </Enfants>
+                        </Iteration>
+                      </Enfants>
+                    </Action>
+                    <Action>
+                      <Position>1513;355</Position>
+                      <StyleLien>2</StyleLien>
+                      <PreAssertion>?</PreAssertion>
+                      <PostAssertion>symbole2</PostAssertion>
+                      <Titre>Saisi du symbole</Titre>
+                      <DetailsVisible>1</DetailsVisible>
+                      <DetailsVideVisible>0</DetailsVideVisible>
+                      <Enfants>
+                        <Iteration>
+                          <Position>1553.5;428.5</Position>
+                          <StyleLien>1</StyleLien>
+                          <Titre>?</Titre>
+                          <IterationFixe>1</IterationFixe>
+                          <Enfants>
+                            <Action>
+                              <Position>1375;514</Position>
+                              <StyleLien>1</StyleLien>
+                              <PreAssertion>?</PreAssertion>
+                              <PostAssertion>?</PostAssertion>
+                              <Titre>Demander la
+ saisie du symbole2</Titre>
+                              <DetailsVisible>1</DetailsVisible>
+                              <DetailsVideVisible>0</DetailsVideVisible>
+                              <Enfants/>
+                            </Action>
+                            <Condition>
+                              <Position>1514;521</Position>
+                              <StyleLien>1</StyleLien>
+                              <estUnique>1</estUnique>
+                              <operationsLogiques>
+                                <operation>
+                                  <Titre>symbole2 est different 
+du symbole du joueur 1</Titre>
+                                  <Enfants>
+                                    <Sortie>
+                                      <Position>1568;609</Position>
+                                    </Sortie>
+                                  </Enfants>
+                                </operation>
+                                <operation>
+                                  <Titre>Sinon</Titre>
+                                  <Enfants/>
+                                </operation>
+                              </operationsLogiques>
+                            </Condition>
+                            <Action>
+                              <Position>1709;527</Position>
+                              <StyleLien>1</StyleLien>
+                              <PreAssertion>?</PreAssertion>
+                              <PostAssertion>?</PostAssertion>
+                              <Titre>Afficher erreur de saisie</Titre>
+                              <DetailsVisible>1</DetailsVisible>
+                              <DetailsVideVisible>0</DetailsVideVisible>
+                              <Enfants/>
+                            </Action>
+                          </Enfants>
+                        </Iteration>
+                      </Enfants>
+                    </Action>
+                  </Enfants>
+                </Action>
+              </Enfants>
+            </Action>
+            <Action>
+              <Position>1802;197</Position>
+              <StyleLien>1</StyleLien>
+              <PreAssertion>?</PreAssertion>
+              <PostAssertion>?</PostAssertion>
+              <Titre>Effacer le terminal</Titre>
+              <DetailsVisible>1</DetailsVisible>
+              <DetailsVideVisible>0</DetailsVideVisible>
+              <Enfants/>
+            </Action>
+            <Action>
+              <Position>78;200</Position>
+              <StyleLien>1</StyleLien>
+              <PreAssertion>?</PreAssertion>
+              <PostAssertion>?</PostAssertion>
+              <Titre>Initialisation de 
+toutes les variables</Titre>
+              <DetailsVisible>1</DetailsVisible>
+              <DetailsVideVisible>0</DetailsVideVisible>
+              <Enfants/>
+            </Action>
+          </Enfants>
+        </Action>
+        <Action>
+          <Position>1085;89</Position>
+          <StyleLien>1</StyleLien>
+          <PreAssertion>?</PreAssertion>
+          <PostAssertion>?</PostAssertion>
+          <Titre>Finaliser la partie</Titre>
+          <DetailsVisible>1</DetailsVisible>
+          <DetailsVideVisible>1</DetailsVideVisible>
+          <Enfants/>
+        </Action>
+      </Enfants>
+    </Action>
+  </Elements>
+</Algorithme>

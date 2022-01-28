@@ -1,0 +1,32 @@
+<?xml version="1.1"?>
+<!DOCTYPE Tabula_Rasa>
+<Algorithme>
+  <nom>Algorithme</nom>
+  <date_creation>5/1/2022 10:49</date_creation>
+  <Elements>
+    <Action>
+      <Position>614;71</Position>
+      <StyleLien>2</StyleLien>
+      <PreAssertion>grille
+colonne ligne 
+symbole</PreAssertion>
+      <PostAssertion>grille</PostAssertion>
+      <Titre>Insertion symbole()</Titre>
+      <DetailsVisible>1</DetailsVisible>
+      <DetailsVideVisible>1</DetailsVideVisible>
+      <Enfants>
+        <Action>
+          <Position>580;155</Position>
+          <StyleLien>1</StyleLien>
+          <PreAssertion>ligne colonne
+grille symbole</PreAssertion>
+          <PostAssertion>grille</PostAssertion>
+          <Titre>grille[ligne][colonne] ← symbole</Titre>
+          <DetailsVisible>1</DetailsVisible>
+          <DetailsVideVisible>1</DetailsVideVisible>
+          <Enfants/>
+        </Action>
+      </Enfants>
+    </Action>
+  </Elements>
+</Algorithme>

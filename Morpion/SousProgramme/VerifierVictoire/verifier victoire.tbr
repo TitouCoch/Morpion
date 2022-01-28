@@ -1,0 +1,117 @@
+<?xml version="1.1"?>
+<!DOCTYPE Tabula_Rasa>
+<Algorithme>
+  <nom>verifier victoire</nom>
+  <date_creation>1/12/2021 15:06</date_creation>
+  <Elements>
+    <Action>
+      <Position>506;22</Position>
+      <StyleLien>2</StyleLien>
+      <PreAssertion>grille[],
+symbole, victoire</PreAssertion>
+      <PostAssertion>victoire</PostAssertion>
+      <Titre>VerifierVictoireLigne()</Titre>
+      <DetailsVisible>1</DetailsVisible>
+      <DetailsVideVisible>1</DetailsVideVisible>
+      <Enfants>
+        <ConditionMultiple>
+          <Position>500;113</Position>
+          <StyleLien>0</StyleLien>
+          <Titre>VerifierVictoireLigne()</Titre>
+          <operationsLogiques>
+            <operation>
+              <Titre>grille[0][0]== symbole
+grille[0][1]==symbole
+grille[0][2]==symbole</Titre>
+              <Enfants>
+                <Action>
+                  <Position>504;183</Position>
+                  <StyleLien>2</StyleLien>
+                  <PreAssertion>?</PreAssertion>
+                  <PostAssertion>?</PostAssertion>
+                  <Titre>grille[0][0]== symbole
+grille[0][1]==symbole
+grille[0][2]==symbole</Titre>
+                  <DetailsVisible>0</DetailsVisible>
+                  <DetailsVideVisible>1</DetailsVideVisible>
+                  <Enfants>
+                    <Action>
+                      <Position>518;255</Position>
+                      <StyleLien>1</StyleLien>
+                      <PreAssertion>?</PreAssertion>
+                      <PostAssertion>?</PostAssertion>
+                      <Titre>victoire ← true</Titre>
+                      <DetailsVisible>0</DetailsVisible>
+                      <DetailsVideVisible>1</DetailsVideVisible>
+                      <Enfants/>
+                    </Action>
+                  </Enfants>
+                </Action>
+              </Enfants>
+            </operation>
+            <operation>
+              <Titre>grille[1][0]== symbole
+grille[1][1]==symbole
+grille[1][2]==symbole</Titre>
+              <Enfants>
+                <Action>
+                  <Position>652;176</Position>
+                  <StyleLien>2</StyleLien>
+                  <PreAssertion>?</PreAssertion>
+                  <PostAssertion>?</PostAssertion>
+                  <Titre>grille[1][0]== symbole
+grille[1][1]==symbole
+grille[1][2]==symbole</Titre>
+                  <DetailsVisible>1</DetailsVisible>
+                  <DetailsVideVisible>0</DetailsVideVisible>
+                  <Enfants>
+                    <Action>
+                      <Position>670;253</Position>
+                      <StyleLien>1</StyleLien>
+                      <PreAssertion>victoire</PreAssertion>
+                      <PostAssertion>victoire</PostAssertion>
+                      <Titre>victoire ← true</Titre>
+                      <DetailsVisible>0</DetailsVisible>
+                      <DetailsVideVisible>1</DetailsVideVisible>
+                      <Enfants/>
+                    </Action>
+                  </Enfants>
+                </Action>
+              </Enfants>
+            </operation>
+            <operation>
+              <Titre>grille[2][0]== symbole
+grille[2][1]==symbole
+grille[2][2]==symbole</Titre>
+              <Enfants>
+                <Action>
+                  <Position>806;177</Position>
+                  <StyleLien>2</StyleLien>
+                  <PreAssertion>?</PreAssertion>
+                  <PostAssertion>?</PostAssertion>
+                  <Titre>grille[0][1]== symbole
+grille[1][1]==symbole
+grille[2][1]==symbole</Titre>
+                  <DetailsVisible>0</DetailsVisible>
+                  <DetailsVideVisible>1</DetailsVideVisible>
+                  <Enfants>
+                    <Action>
+                      <Position>826;251</Position>
+                      <StyleLien>1</StyleLien>
+                      <PreAssertion>victoire</PreAssertion>
+                      <PostAssertion>victoire</PostAssertion>
+                      <Titre>victoire ← true</Titre>
+                      <DetailsVisible>0</DetailsVisible>
+                      <DetailsVideVisible>1</DetailsVideVisible>
+                      <Enfants/>
+                    </Action>
+                  </Enfants>
+                </Action>
+              </Enfants>
+            </operation>
+          </operationsLogiques>
+        </ConditionMultiple>
+      </Enfants>
+    </Action>
+  </Elements>
+</Algorithme>
